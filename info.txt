@@ -16,6 +16,10 @@
 	e.g. fig = px.pie(labels=ratings.index, values=ratings.values)
 	     fig.show()
 	2. a donut simply add a value for the hole argument
- 	e.g. fig = px.pie(labels=ratings.index, values=ratings.values, title='content rating', names=ratings.index, hole=0.6)4	
+ 	e.g. fig = px.pie(labels=ratings.index, values=ratings.values, title='content rating', names=ratings.index, hole=0.6)
 	     fig.update_traces(textposition='inside', textfont_size=15, textinfo='percent')
 	     fig.show()
+
+# Remove character from the dataframe 
+-> use the string's .replace() method
+-> replace the character with empty string and convert to number using .to_numeric()
