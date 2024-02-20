@@ -1,0 +1,9 @@
+# Dropping unused columns
+-> simply provide a list of the column names to the .drop() method.
+-> set axis=1 to specify that we want to drop certain columns
+
+# Checking for Duplicates
+-> use the .duplicated() function
+-> use the .drop_duplicates to remove duplicates and also provide the column names that should be used in the comparison to identify
+   duplicates as subset
+-> e.g. df_apps_clean = df_apps_clean.drop_duplicates(subset=['App','Type','Price'])
