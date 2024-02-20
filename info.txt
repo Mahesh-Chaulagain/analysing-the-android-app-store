@@ -7,3 +7,15 @@
 -> use the .drop_duplicates to remove duplicates and also provide the column names that should be used in the comparison to identify
    duplicates as subset
 -> e.g. df_apps_clean = df_apps_clean.drop_duplicates(subset=['App','Type','Price'])
+
+# Plotly
+-> popular data visualisation library that can be used alongside or instead of matplotlib
+-> to import: import ploty.express as px
+-> to create 
+	1. a pie chart simply call px.pie() and then .show()
+	e.g. fig = px.pie(labels=ratings.index, values=ratings.values)
+	     fig.show()
+	2. a donut simply add a value for the hole argument
+ 	e.g. fig = px.pie(labels=ratings.index, values=ratings.values, title='content rating', names=ratings.index, hole=0.6)4	
+	     fig.update_traces(textposition='inside', textfont_size=15, textinfo='percent')
+	     fig.show()
