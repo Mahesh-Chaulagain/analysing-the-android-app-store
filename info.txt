@@ -1,6 +1,7 @@
 # Dropping unused columns
 -> simply provide a list of the column names to the .drop() method.
 -> set axis=1 to specify that we want to drop certain columns
+-> e.g df_apps.drop(['Last_Updated','Android_Ver'],axis=1,inplace=True)
 
 # Checking for Duplicates
 -> use the .duplicated() function
@@ -23,3 +24,8 @@
 # Remove character from the dataframe 
 -> use the string's .replace() method
 -> replace the character with empty string and convert to number using .to_numeric()
+
+# Box Plot
+-> show some handy descriptive statistics in a graph - things like median value, the maximum value, the minimum
+   value and some quartiles
+
